@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/common.css">
   <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/brand.css">
 </head>
 <body>
   <div class="container">
@@ -18,9 +19,97 @@
     <div class="lv-main">
       <%- include('./common/menu') %>
 
-      <div class="body">
-        手机管理
-      </div>
+          <div class="body brand">
+              <input type="button" value="新增手机" class="btn btn-default">
+              <form action="" class="form-horizontal">
+                <h2>新增品牌</h2>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">品牌名称：</label>
+                      <input type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">品牌LOGO：</label>
+                      <input type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">官方指导价：</label>
+                      <input type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">回收价：</label>
+                      <input type="text" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">上传图片</label>
+                    <input type="file" >
+                </div>
+                <div class="form-group">
+                    <input type="button" value="确认" class="btn btn-default">
+                    <input type="button" value="取消" class="btn btn-default">
+                </div>
+              </form>
+              <table class="table table-striped table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>序号</th>
+                      <th>图片</th>
+                      <th>手机名称</th>
+                      <th>所属品牌</th>
+                      <th>官方指导价</th>
+                      <th>回收价</th>
+                      <th>操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>18</td>
+                      <td>华为</td>
+                      <td>华为</td>
+                      <td>华为</td>
+                      <td>华为</td>
+                      <td><span>修改</span><span>删除</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>25</td>
+                      <td>小米</td>
+                      <td>华为</td>
+                      <td>华为</td>
+                      <td>华为</td>
+                      <td><span>修改</span><span>删除</span></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>23</td>
+                      <td>苹果</td>
+                      <td>华为</td>
+                      <td>华为</td>
+                      <td>华为</td>
+                      <td><span>修改</span><span>删除</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <nav>
+                    <ul class="pagination">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
 
     </div>
 

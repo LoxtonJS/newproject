@@ -65,7 +65,7 @@ body {
 }
 
 .table-hover > tbody > tr:hover {
-  background-color: #89c0c0;
+  background-color: #337AB7;
 }
 
 .pagination {
