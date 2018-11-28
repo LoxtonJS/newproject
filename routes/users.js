@@ -73,10 +73,7 @@ router.get('/', function(req, res, next) {
       }
     })
   })
-
-
-
-  
+ 
 });
 
 
@@ -85,6 +82,7 @@ router.post('/login', function(req, res) {
   // 1. 获取前端传递过来的参数
   var username = req.body.name;
   var password = req.body.pwd;
+  console.log(req.body);
   // 2. 验证参数的有效性
   if (!username) {
     res.render('error', {
@@ -153,12 +151,14 @@ router.post('/login', function(req, res) {
 // 注册操作 localhost:3000/users/register
 router.post('/register', function(req, res) {
   var name = req.body.name;
-  var pwd = req.body.pwd;
   var nickname = req.body.nickname;
+  var pwd = req.body.pwd;
+  var isPwd = req.body.isPwd;
+  var phone = parseInt(req.body.phone);
   var age = parseInt(req.body.age);
   var sex = req.body.sex;
   var isAdmin = req.body.isAdmin === '是' ? true : false;
-
+  console.log(req.body);
   MongoClient.connect(url, {useNewUrlParser: true}, function(err, client) {
     if (err) {
       res.render('error', {
@@ -188,8 +188,9 @@ router.post('/register', function(req, res) {
       function(cb) {
         db.collection('user').insertOne({
           username: name,
+          nickname: nickname, 
           password: pwd,
-          nickname: nickname,
+          phone: phone,
           age: age,
           sex: sex,
           isAdmin: isAdmin

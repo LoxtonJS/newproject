@@ -12,36 +12,36 @@
 </head>
 <body>
     <div class="container">
-        <form action="users/register" method="POST" class="form-horizontal">
+        <form action="/users/register" method="POST" class="form-horizontal">
             <h2>xx后台管理系统——注册</h2>
             <div class ="input">
                 <div class="left">
                     <div class="form-group">
                         
-                        <span> 用&nbsp&nbsp户&nbsp&nbsp名:</span><input type="text" class="form-control" placeholder="请输入用户名"  class="form-control">
+                        <span> 用&nbsp&nbsp户&nbsp&nbsp名:</span><input type="text"  name="name" class="form-control" placeholder="请输入用户名"  class="form-control">
                     </div>
                     <div class="form-group">
                         
-                        <span>昵&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp称:</span><input type="text" class="form-control" placeholder="请输入昵称"  class="form-control">
+                        <span>昵&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp称:</span><input type="text"  name="nickname" class="form-control" placeholder="请输入昵称"  class="form-control">
                     </div>
                     <div class="form-group">
                         
-                        <span> 密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码:</span><input type="password" class="form-control" placeholder="请输入密码"  class="form-control">
+                        <span> 密&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp码:</span><input type="password" name="pwd"  class="form-control" placeholder="请输入密码"  class="form-control">
                     </div>
                     <div class="form-group">
                         
-                        <span>确认密码:</span><input type="password" class="form-control" placeholder="请确认密码"  class="form-control">
+                        <span>确认密码:</span><input type="password" class="form-control" placeholder="请确认密码" name="isPwd" class="form-control">
                     </div>
                 </div>
                 
                 <div class="right">
                     <div class="form-group">
                         
-                    <span>手机号:</span><input type="text" class="form-control" placeholder="请输入手机号码"  class="form-control">
+                    <span>手机号:</span><input type="text" class="form-control" placeholder="请输入手机号码" name="phone" class="form-control">
                     </div>
                     <div class="form-group">
                         
-                        <span>年&nbsp&nbsp&nbsp龄:</span><input type="text" class="form-control" placeholder="请输入年龄"   class="form-control">
+                        <span>年&nbsp&nbsp&nbsp龄:</span><input type="text" class="form-control" placeholder="请输入年龄" name="age"  class="form-control">
                     </div>
                     <div class="form-group">
                         
@@ -58,7 +58,7 @@
             </div>
         
             <div class="form-group form-submit">
-                <input type=submit" value="注册" class="btn btn-default">
+                <input type="submit" value="注册" class="btn btn-default">
                 <a href="/login.html">已有账号，直接登录</a>
             </div>
         </form>
