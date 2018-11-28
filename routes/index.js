@@ -29,4 +29,5 @@ router.get('/login.html', function(req, res) {
 router.get('/register.html', function(req, res) {
   res.render('register');
 })
+
 module.exports = router;

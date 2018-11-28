@@ -1,1 +1,39 @@
+.container {
+  width: 970px; }
+  .container .form-horizontal {
+    width: 100%;
+    background: #fff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 6px; }
+    .container .form-horizontal h2 {
+      margin: 40px 0;
+      font-weight: 600;
+      font-size: 30px;
+      text-align: center;
+      box-sizing: border-box; }
+    .container .form-horizontal .input {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50px; }
+    .container .form-horizontal .form-group {
+      width: 100%;
+      margin: 30px 0; }
+      .container .form-horizontal .form-group span {
+        font-weight: 600;
+        margin-right: 10px; }
+      .container .form-horizontal .form-group .form-control {
+        width: 300px;
+        display: inline-block; }
+      .container .form-horizontal .form-group .btn-default {
+        width: 100px; }
+      .container .form-horizontal .form-group a {
+        font-size: 12px;
+        margin-left: 10px; }
+    .container .form-horizontal .form-submit {
+      margin-left: 50px; }
 
+.login {
+  width: 600px; }
+
+/*# sourceMappingURL=form.css.map */

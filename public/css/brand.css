@@ -1,27 +1,33 @@
 .brand {
-  position: relative; }
-  .brand .btn-default {
-    margin: 30px 0; }
-  .brand .form-horizontal {
-    border: 1px solid #999;
-    width: 400px;
-    height: auto;
-    position: absolute;
-    top: 80px;
-    left: 20px;
-    background: #fff;
-    z-index: 20px;
-    display: none; }
-    .brand .form-horizontal h2 {
-      font-size: 20px;
-      color: #1d1d1d;
-      font-weight: 600;
-      margin: 10px 0 0 20px; }
-    .brand .form-horizontal .form-group {
-      color: #1d1d1d;
-      margin: 26px 0; }
-      .brand .form-horizontal .form-group .form-control {
-        width: 200px;
-        height: 50px; }
+  position: relative;
+}
+.brand .btn-default {
+  margin: 30px 0;
+}
+.brand .form-horizontal {
+  border: 1px solid #999;
+  width: 400px;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  background: #fff;
+  z-index: 20px;
+  display: none;
+}
+.brand .form-horizontal h2 {
+  font-size: 20px;
+  color: #1d1d1d;
+  font-weight: 600;
+  margin: 10px 0 0 20px;
+}
+.brand .form-horizontal .form-group {
+  color: #1d1d1d;
+  margin: 26px 0;
+}
+.brand .form-horizontal .form-group .form-control {
+  width: 200px;
+  height: 50px;
+}
 
 /*# sourceMappingURL=brand.css.map */

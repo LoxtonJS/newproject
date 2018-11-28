@@ -6,6 +6,12 @@ var router = express.Router();
 
 var url = 'mongodb://127.0.0.1:27017';
 
+//localhost:3000 首页
+
+
+
+
+
 // location:3000/users
 router.get('/', function(req, res, next) {
   var page = parseInt(req.query.page) || 1; // 页码
